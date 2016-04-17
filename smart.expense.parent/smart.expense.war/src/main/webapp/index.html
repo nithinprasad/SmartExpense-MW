@@ -1,0 +1,104 @@
+
+
+<html>
+<head>
+
+<title>Index</title>
+<link href="./js/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="./js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<!-- <link href="./js/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href="./js/bootstrap/prettify.css" rel="stylesheet">
+
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- <script src="./js/bootstrap/js/bootstrap.min.js"></script> -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./js/bootstrap/js/bootstrap-dropdown.js"></script>
+
+<!-- 	<link href='./js/bootstrap/layout.css' media='all' type='text/css' rel='stylesheet'/> -->
+<style>
+		#page {min-height:600px;}
+		.package {margin-left:10px;padding:3px;border-radius:2px;margin-top:2px;}
+		.header {cursor:pointer;}
+
+		.name {color:gray;}
+
+		.array {background-color:#FFD8BB;border:thin solid #FFB780;}
+		.object {background-color:#E7F1FE;border:thin solid #7DA2CE;}
+		.string {color:red;}
+		.number {color:blue;}
+		.function {color:green;}
+
+		.open .children {display:block;}
+		.closed .children {display:none;}
+		
+		.arrow {background-image:url("img/d.png"); background-repeat:no-repeat; background-color:transparent; height:15px; width:15px; display:inline-block;}
+
+		.open .arrow {background-position:-20px 0;}
+		.closed .arrow {background-position:0 0;}
+
+		.type {color:gray;font-size:8pt;float:right;}
+
+		.hide {display:none;}
+
+		#main {width:100%;height:500px;overflow-y:scroll;}
+		
+		.regbiller {background-color: #B2DFDB;border:0px;color: solid black;}
+		.bill {background-color: #81C784;border:0px;color: solid black;}
+		.payee {background-color: #E1BEE7;border:0px;color: solid black;}
+		.card {background-color: #B3E5FC;border:0px;color: solid black;}
+		.fund {background-color: #F0F4C3;border:0px;color: solid black;}
+		.report {background-color: #F0F788;border:0px;color: solid black;}
+		.termDeposits {background-color: #66CDAA;border:0px;color: solid black;}
+		.recurringDeposit{background-color: #E59A9A;border:0px;color: solid black;}
+		.loanAccount {background-color: #F4A460;border:0px;color: solid black;}
+		.preferences {background-color: #C8E6C9 ;border:0px;color: solid black;}
+		.custProfile{background-color: #FFCCBC ;border:0px;color: solid black;}
+		.biller {background-color: #CFD8DC;border:0px;color: solid black;}
+		.payment {background-color: #D7CCC8;border:0px;color: solid black;}
+		.custAcc {background-color: #FFF9C4;border:0px;color: solid black;}
+		.serReq {background-color: #D7DF01;border:0px;color: solid black;}
+		.futTxn {background-color: #9999FF;border:0px;color: solid black;}
+		.portolio {background-color: #808000;border:0px;color: solid black;}
+		.ChequeBook {background-color: #ADD8E6;border:0px;color: solid black;}
+		.CreditCard {background-color: #ADD8E6;border:0px;color: solid black;}
+		.prodSearch {background-color: #9999FF; border:0px; color:solid black;}
+		.notes{background-color: #476BB2;border:0px;color: #FFFFFF;}		
+		.directDebit {background-color: #20B2AA;border:0px;color: solid black;}
+		.taxes {background-color: #FF9900; border:0px; color:solid black;}
+	</style>
+</head>
+<body>
+<form enctype='application/json' Content-Type="application/x-www-form-urlencoded" method="post" name="jasperInputForm">
+<b>MBL</b><br>
+<!--	<script type="text/javascript">
+	var currentLocation = window.location;
+	alert(currentLocation);
+	</script>-->
+<script src="js/jquery.min.js"></script>
+<script src="js/authentication.js"></script>
+<br>
+<input type="button" value="Login" onclick="login()" />
+
+
+
+</td>
+<td>
+<div class="panel panel-success">
+<div class='panel-heading'>Input::</div>
+<div id="inputJSON" style="border: 2px;color: green;width: 400px;height: 400px;overflow: auto;" class="panel-body" >
+</div>
+</div>
+<div class="panel panel-success">
+<div class='panel-heading'>Output::</div>
+<div id="outputJSON"  style="border: 2px;color: red;width: 400px;height: 400px;overflow: auto;" class="panel panel-success">
+</div>
+</div>
+<div id="top">
+</div>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

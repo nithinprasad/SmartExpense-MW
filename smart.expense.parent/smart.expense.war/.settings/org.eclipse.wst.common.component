@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="smart.expense.war">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="smart.expense.handlers-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart.expense.handlers/smart.expense.handlers">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="smart.expense.configuration-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart.expense.configuration/smart.expense.configuration">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="smart.expense.constant-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart.expense.constant/smart.expense.constant">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="smart.expense.war"/>
+        <property name="java-output-path" value="/smart.expense.war/target/classes"/>
+    </wb-module>
+</project-modules>

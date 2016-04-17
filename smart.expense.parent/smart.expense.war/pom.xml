@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>SmartExpense</groupId>
+    <artifactId>smart.expense.parent</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <groupId>SmartExpense</groupId>
+  <artifactId>smart.expense.war</artifactId>
+  <version>0.0.1</version>
+  <packaging>war</packaging>
+  <name>smart.expense.war Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.4</version>
+    <scope>provided</scope>
+</dependency>
+    <dependency>
+    	<groupId>SmartExpense</groupId>
+    	<artifactId>smart.expense.handlers</artifactId>
+    	<version>0.0.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>SmartExpense</groupId>
+    	<artifactId>smart.expense.configuration</artifactId>
+    	<version>0.0.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>SmartExpense</groupId>
+    	<artifactId>smart.expense.entity</artifactId>
+    	<version>0.0.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>SmartExpense</groupId>
+    	<artifactId>smart.expense.constant</artifactId>
+    	<version>0.0.1</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>smart.expense.war</finalName>
+  </build>
+</project>
